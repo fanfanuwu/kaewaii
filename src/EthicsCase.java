@@ -8,5 +8,28 @@
  * @author 345341119
  */
 public class EthicsCase {
+    private String caseTitle;
+    private String description;
+    private String category;
+    public Verdict verdict;
     
+    public EthicsCase(String caseTitle,String description,String category){
+        this.caseTitle = caseTitle;
+        this.description = description;
+        this.category = category;
+        verdict = new Verdict();
+        
+    }
+    public String getCaseTitle(){
+        return caseTitle;
+    }
+    public String getCaseDescription(){
+        return description;
+    }
+    public String getCategory(){
+        return category;
+    }
+    public String toString(){
+        return "";
+    }
 }

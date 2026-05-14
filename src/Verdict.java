@@ -8,5 +8,39 @@
  * @author 345341119
  */
 public class Verdict {
+    private String caseName;
+    private String studentVerdict;
+    private String reason;
     
+    public Verdict(){
+        caseName = "";
+        studentVerdict = "";
+        reason = "";
+    }
+    public Verdict(String caseName, String verdict, String reason){
+        this.caseName = caseName;
+        this.studentVerdict = verdict;
+        this.reason = reason;
+    }
+    public void setCaseName(String title){
+        caseName = title;
+    }
+    public String getCaseTitle(){
+        return caseName;
+    }
+    public void setReason(String reason){
+        this.reason = reason;
+    }
+    public String getReason(){
+        return reason;
+    }
+    public void setStudentVerdict (String verdict){
+        this.studentVerdict = verdict;
+    }
+    public String getStudentVerdict(){
+        return studentVerdict;
+    }
+    public String toString(){
+        return "";
+    }
 }

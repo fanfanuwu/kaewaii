@@ -10,5 +10,10 @@
 public class Main {
     public static void main(String args[]) {
         PrivacyCase privacyCase = new PrivacyCase("Data Leak Case","Company exposed user emails publicly.","Personal Data.");
+        System.out.println(privacyCase.getCaseTitle());
+         AlgorithmCase algorithmCase = new AlgorithmCase("bias","there was bias","no bias");
+          MisinformationCase misinformationCase = new MisinformationCase("cao","ni","ma");
+           IntellectualPropertyCase intellectualPropertyCase = new IntellectualPropertyCase("ham","sup","lo");
+           
     }
 }

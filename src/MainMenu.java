@@ -9,6 +9,65 @@
  */
 public class MainMenu extends javax.swing.JFrame {
 
+    EthicsCase [] cases = new EthicsCase [8];
+           cases[0]= new PrivacyCase(
+           "The Always-On Microphone" ,
+           "A smart speaker company recorded household conversations even" +
+           "when the device was not activated. Employees reviewed the recordings.",
+           "Audio Recordings"
+           );
+        cases[1]= new AlgorithmCase(
+        "The Biased Hiring Bot" ,
+        "A tech company's AI screening tool ranked male applicants higher" +
+        "than equally qualified female applicants." ,
+        "gender bias"
+        );
+        cases[2] = new MisinformationCase(
+        "The Deepfake Politician" ,
+        "A deepfake video of a candidate saying things they never said spread" +
+        "widely online during an election before being identified as fake." ,
+        "deepfake video"
+        );
+        
+        cases[3]= new IntellectualPropertyCase(
+        "AI Trained on Artist Work",
+        "An AI image generator was trained on millions of artworks scraped" +
+        "without permission. Artists receive no credit or payment. "  ,
+        "AI-generated art"
+        );
+        
+        cases[4] = new PrivacyCase(
+        " The School Laptop Spyware" ,
+        "A school installed monitoring software on student laptops that" +
+        "secretly activated webcams and tracked student activity at home" + 
+        "without students knowing. Parents later raised concerns about privacy" + 
+        "and surveillance." ,
+        "webcam monitoring"
+        );
+        
+        cases[5] = new AlgorithmCase(
+         "The Loan Approval System",
+         "A bank used an AI system to decide loan approvals. The system rejected" + 
+         "applicants from lower-income neighbourhoods more often, even when they" + 
+         "had strong credit scores and stable jobs." ,
+         "income bias"       
+        );
+        
+        cases[6] = new MisinformationCase(
+       "The Edited Celebrity Clip"  ,
+       "A short edited video of a celebrity appeared online and made it seem like" +
+       "they insulted a group of people. The clip spread quickly before the" +
+       "full unedited video revealed the statement was taken out of context." ,
+       "manipulated video"         
+        );
+        
+        cases[7] = new IntellectualPropertyCase(
+        "The Copied Student Code" ,
+        "A student copied large sections of another programmer’s code from GitHub" +
+        "for a school project without giving credit. The project earned a high mark" +
+        "before the plagiarism was discovered." ,
+        "software plagiarism"        
+        );
     /**
      * Creates new form MainMenu
      */

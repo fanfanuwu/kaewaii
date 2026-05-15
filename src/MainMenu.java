@@ -9,12 +9,19 @@
  */
 public class MainMenu extends javax.swing.JFrame {
 
-    EthicsCase [] cases = new EthicsCase [8];
-           cases[0]= new PrivacyCase(
-           "The Always-On Microphone" ,
+    public static EthicsCase [] cases = new EthicsCase [8];
+           
+    /**
+     * Creates new form MainMenu
+     */
+    public MainMenu() {
+        initComponents();
+        
+        cases[0]= new PrivacyCase(
+         "The Always-On Microphone" ,
            "A smart speaker company recorded household conversations even" +
-           "when the device was not activated. Employees reviewed the recordings.",
-           "Audio Recordings"
+           "\nwhen the device was not activated. Employees reviewed the recordings.",
+           "\nAudio Recordings"
            );
         cases[1]= new AlgorithmCase(
         "The Biased Hiring Bot" ,
@@ -68,11 +75,6 @@ public class MainMenu extends javax.swing.JFrame {
         "before the plagiarism was discovered." ,
         "software plagiarism"        
         );
-    /**
-     * Creates new form MainMenu
-     */
-    public MainMenu() {
-        initComponents();
     }
 
     /**
